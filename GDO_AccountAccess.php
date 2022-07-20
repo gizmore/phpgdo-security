@@ -10,7 +10,7 @@ use GDO\Core\GDT_MD5;
 use GDO\UI\GDT_Link;
 use GDO\User\GDT_User;
 use GDO\User\GDO_User;
-use GDO\DB\GDT_Index;
+use GDO\Core\GDT_Index;
 
 /**
  * Table with user login history.

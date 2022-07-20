@@ -4,7 +4,7 @@ namespace GDO\Security\Method;
 use GDO\User\GDO_User;
 use GDO\Table\MethodQueryTable;
 use GDO\Security\GDO_AccountAccess;
-use GDO\Form\GDT_DeleteButton;
+use GDO\UI\GDT_DeleteButton;
 use GDO\Form\GDT_Form;
 use GDO\Form\GDT_AntiCSRF;
 
