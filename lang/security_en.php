@@ -1,8 +1,8 @@
 <?php
 return [
 'list_security_access' => '%s Access events',
-'mtitle_security_access' => 'Access history',
-'mdescr_security_access' => 'Review logins for your account.',
+'mt_security_access' => 'Access history',
+'md_security_access' => 'Review logins for your account.',
 'accacc_isp' => 'ISP',
 'accacc_ua' => 'User-Agent',
     

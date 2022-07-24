@@ -5,12 +5,13 @@ use GDO\User\GDO_User;
 use GDO\Table\MethodQueryTable;
 use GDO\Security\GDO_AccountAccess;
 use GDO\UI\GDT_DeleteButton;
+use GDO\Core\GDO;
 use GDO\Form\GDT_Form;
 use GDO\Form\GDT_AntiCSRF;
 
 final class Access extends MethodQueryTable
 {
-    public function gdoTable() { return GDO_AccountAccess::table(); }
+    public function gdoTable() : GDO { return GDO_AccountAccess::table(); }
 
     public function getQuery()
     {

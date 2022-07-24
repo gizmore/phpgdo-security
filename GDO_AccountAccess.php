@@ -6,7 +6,7 @@ use GDO\Core\GDT_AutoInc;
 use GDO\Core\GDT_CreatedAt;
 use GDO\Mail\Mail;
 use GDO\Net\GDT_IP;
-use GDO\Core\GDT_MD5;
+use GDO\Hash\GDT_MD5;
 use GDO\UI\GDT_Link;
 use GDO\User\GDT_User;
 use GDO\User\GDO_User;
