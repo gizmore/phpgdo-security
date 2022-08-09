@@ -13,7 +13,7 @@ final class Access extends MethodQueryTable
 {
     public function gdoTable() : GDO { return GDO_AccountAccess::table(); }
 
-    public function getQuery()
+    public function getQuery() : Query
     {
         $user = GDO_User::current();
         return parent::getQuery()->where("accacc_uid={$user->getID()}");
