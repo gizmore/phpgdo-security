@@ -27,17 +27,11 @@ final class Access extends MethodQueryTable
             'accacc_time', 'accacc_ip', 'accacc_isp', 'accacc_ua']);
     }
     
-    public function getForm()
+    public function createForm(GDT_Form $form): void
     {
-        $form = GDT_Form::make()->slim();
+        $form->slim();
         $form->addField(GDT_AntiCSRF::make());
         $form->actions()->addField(GDT_DeleteButton::make());
-        return $form;
     }
     
-    public function execute()
-    {
-        $form = $this->getForm();
-        return parent::execute()->addField($form);
-    }
 }
