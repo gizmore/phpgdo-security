@@ -1,18 +1,18 @@
 <?php
 namespace GDO\Security;
 
-use GDO\User\GDO_User;
 use GDO\Core\Application;
 use GDO\Core\GDO_Module;
 use GDO\Core\GDT_Checkbox;
 use GDO\UI\GDT_Link;
+use GDO\User\GDO_User;
 
 /**
  * Alert on logins, when client has changes in IP or user agent.
  *
- * @author gizmore
  * @version 6.10.3
  * @since 6.10.3
+ * @author gizmore
  */
 final class Module_Security extends GDO_Module
 {
@@ -55,7 +55,7 @@ final class Module_Security extends GDO_Module
 	# ############
 	public function hookUserAuthenticated(GDO_User $user)
 	{
-		if ( !Application::instance()->isCLI())
+		if (!Application::instance()->isCLI())
 		{
 			GDO_AccountAccess::onAccess($user);
 		}
