@@ -24,7 +24,7 @@ final class Module_Security extends GDO_Module
 		$this->loadLanguage('lang/security');
 	}
 
-	public function getUserSettings()
+	public function getUserSettings(): array
 	{
 		return [
 			GDT_Link::make('link_security_access')->href(
