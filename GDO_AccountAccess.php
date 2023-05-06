@@ -66,7 +66,7 @@ final class GDO_AccountAccess extends GDO
 		{
 			if (0 != self::table()->countWhere("accacc_uid={$user->getID()}"))
 			{
-				if (!self::table()->select('1')->where("accacc_uid={$user->getID()} $query")->exec()->fetchValue())
+				if (!self::table()->select('1')->where("accacc_uid={$user->getID()} $query")->exec()->fetchVar())
 				{
 					self::sendAlertMail($user);
 				}
