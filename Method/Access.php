@@ -28,7 +28,7 @@ final class Access extends MethodQueryTable
 			'accacc_time', 'accacc_ip', 'accacc_isp', 'accacc_ua']);
 	}
 
-	public function createForm(GDT_Form $form): void
+	protected function createForm(GDT_Form $form): void
 	{
 		$form->slim();
 		$form->addField(GDT_AntiCSRF::make());
